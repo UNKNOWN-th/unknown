@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://js.puter.com/v2/"></script>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboTech | AI & Robotics Solutions</title>
+    <meta name="description" content="AI-powered robotics solutions, automation, and intelligent systems.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://unknown-th.github.io/unknown/">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🤖 RoboTech</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/robots.html">Robots</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Intelligent <span>Robotics</span> & AI Solutions</h1>
+            <p>Building the future with smart automation, AI, and robotics.</p>
+            <a href="/services.html" class="btn-primary">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- 🔍 AI Search Box -->
+    <section class="search-section">
+        <h2>🔍 Ask AI Anything About Robotics</h2>
+        <div class="search-box">
+            <input type="text" id="aiSearch" placeholder="Type a question... (e.g. 'what is a robot', 'AI in manufacturing')" onkeydown="if(event.key==='Enter') askAI()">
+            <button onclick="askAI()" class="btn-primary">Ask AI</button>
+        </div>
+        <div id="aiResult" class="ai-result"></div>
+    </section>
+
+    <!-- Robots Preview -->
+    <section class="section">
+        <h2>Our Robots</h2>
+        <div class="cards" id="robotCards">
+            <div class="card" data-keywords="industrial arm factory automation">
+                <h3>🦾 Industrial Arm</h3>
+                <p>6-axis robotic arm for factory automation, welding, assembly, and material handling.</p>
+                <span class="tag">Industrial</span>
+            </div>
+            <div class="card" data-keywords="humanoid ai chat conversation assistant">
+                <h3>🤖 Humanoid Assistant</h3>
+                <p>AI-powered humanoid robot for customer service, guidance, and interactive tasks.</p>
+                <span class="tag">AI + Humanoid</span>
+            </div>
+            <div class="card" data-keywords="drone aerial survey agriculture delivery">
+                <h3>🚁 Autonomous Drone</h3>
+                <p>Self-flying drone for aerial survey, agriculture monitoring, and delivery.</p>
+                <span class="tag">Aerial</span>
+            </div>
+            <div class="card" data-keywords="warehouse logistics picking sorting">
+                <h3>📦 Warehouse Bot</h3>
+                <p>Autonomous mobile robot for warehouse picking, sorting, and inventory management.</p>
+                <span class="tag">Logistics</span>
+            </div>
+            <div class="card" data-keywords="medical surgery hospital healthcare">
+                <h3>⚕️ Medical Robot</h3>
+                <p>Robotic surgery assistance and patient care automation for hospitals.</p>
+                <span class="tag">Medical</span>
+            </div>
+            <div class="card" data-keywords="agriculture farming autonomous field">
+                <h3>🌾 Agri Robot</h3>
+                <p>Autonomous farming robot for planting, monitoring, and harvesting.</p>
+                <span class="tag">Agriculture</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt">
+        <h2>Our Services</h2>
+        <div class="features">
+            <div class="feature"><h3>🤖 Robot Design</h3><p>Custom robot design & development.</p></div>
+            <div class="feature"><h3>🧠 AI Integration</h3><p>ML/AI models for smart decision making.</p></div>
+            <div class="feature"><h3>⚙️ Automation</h3><p>End-to-end process automation.</p></div>
+            <div class="feature"><h3>🔧 Maintenance</h3><p>Robot repair, upgrade & support.</p></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Ready to Automate?</h2>
+        <p>Let's build your intelligent system together.</p>
+        <a href="/contact.html" class="btn-primary">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4>🤖 RoboTech</h4>
+                <p>AI & Robotics Solutions</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <a href="/">Home</a>
+                <a href="/robots.html">Robots</a>
+                <a href="/services.html">Services</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+                <p>✉️ hello@robotech.in</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 RoboTech. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>   
