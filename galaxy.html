@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body style="margin:0;background:#000;overflow:hidden">
+<canvas id="c"></canvas>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');
+function resize(){c.width=innerWidth;c.height=innerHeight}
+resize();onresize=resize;
+let stars=Array.from({length:1500},()=>({a:Math.random()*6.28,r:Math.random()*Math.min(c.width,c.height)/2,z:Math.random()*2+0.2,s:Math.random()*2}));
+function draw(){
+x.fillStyle="#000";x.fillRect(0,0,c.width,c.height);
+for(let p of stars){
+p.a+=0.002/p.z;
+let r=p.r*(1+Math.sin(p.a*2)*0.08);
+let X=c.width/2+Math.cos(p.a)*r,Y=c.height/2+Math.sin(p.a)*r*.5;
+x.fillStyle=`hsl(${190+p.r%160},100%,${50+p.s*20}%)`;
+x.beginPath();x.arc(X,Y,p.s,0,6.28);x.fill();
+}
+requestAnimationFrame(draw)}
+draw();
+</script>
+</body>
+</html>
